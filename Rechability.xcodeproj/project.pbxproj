@@ -14,6 +14,9 @@
 		0BFB60511BC448B700AC4D03 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BFB60501BC448B700AC4D03 /* Images.xcassets */; };
 		0BFB60541BC448B700AC4D03 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BFB60521BC448B700AC4D03 /* LaunchScreen.xib */; };
 		0BFB60601BC448B700AC4D03 /* RechabilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFB605F1BC448B700AC4D03 /* RechabilityTests.m */; };
+		0BFB606A1BC448E300AC4D03 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFB60691BC448E300AC4D03 /* CFNetwork.framework */; };
+		0BFB606C1BC4494B00AC4D03 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFB606B1BC4494B00AC4D03 /* NetworkExtension.framework */; };
+		0BFB606F1BC44ABA00AC4D03 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFB606E1BC44ABA00AC4D03 /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,10 @@
 		0BFB60591BC448B700AC4D03 /* RechabilityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RechabilityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BFB605E1BC448B700AC4D03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BFB605F1BC448B700AC4D03 /* RechabilityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RechabilityTests.m; sourceTree = "<group>"; };
+		0BFB60691BC448E300AC4D03 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		0BFB606B1BC4494B00AC4D03 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		0BFB606D1BC44ABA00AC4D03 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		0BFB606E1BC44ABA00AC4D03 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BFB606C1BC4494B00AC4D03 /* NetworkExtension.framework in Frameworks */,
+				0BFB606A1BC448E300AC4D03 /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,8 @@
 		0BFB60371BC448B700AC4D03 = {
 			isa = PBXGroup;
 			children = (
+				0BFB606B1BC4494B00AC4D03 /* NetworkExtension.framework */,
+				0BFB60691BC448E300AC4D03 /* CFNetwork.framework */,
 				0BFB60421BC448B700AC4D03 /* Rechability */,
 				0BFB605C1BC448B700AC4D03 /* RechabilityTests */,
 				0BFB60411BC448B700AC4D03 /* Products */,
@@ -85,6 +96,8 @@
 				0BFB60481BC448B700AC4D03 /* AppDelegate.m */,
 				0BFB604A1BC448B700AC4D03 /* ViewController.h */,
 				0BFB604B1BC448B700AC4D03 /* ViewController.m */,
+				0BFB606D1BC44ABA00AC4D03 /* Reachability.h */,
+				0BFB606E1BC44ABA00AC4D03 /* Reachability.m */,
 				0BFB604D1BC448B700AC4D03 /* Main.storyboard */,
 				0BFB60501BC448B700AC4D03 /* Images.xcassets */,
 				0BFB60521BC448B700AC4D03 /* LaunchScreen.xib */,
@@ -221,6 +234,7 @@
 			files = (
 				0BFB604C1BC448B700AC4D03 /* ViewController.m in Sources */,
 				0BFB60491BC448B700AC4D03 /* AppDelegate.m in Sources */,
+				0BFB606F1BC44ABA00AC4D03 /* Reachability.m in Sources */,
 				0BFB60461BC448B700AC4D03 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
